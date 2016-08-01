@@ -1,5 +1,5 @@
 /*!
- * jQuery mRender v1.0
+ * jQuery mRender v1.0.1
  * Copyright 2016 maam.inc
  * Contributing Author: Hiroki Homma
  * Require for jQuery v1.7 or above
@@ -92,7 +92,7 @@
     };
 
     var on = function(name) {
-      if(event_flags[name]) {
+      if(typeof event_flags[name] !== 'undefined') {
         event_flags[name] = true;
       }
 
