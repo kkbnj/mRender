@@ -1,5 +1,5 @@
 /*!
- * jQuery mRender v1.0.2
+ * jQuery mRender v1.0.3
  * Copyright 2016 maam.inc
  * Contributing Author: Hiroki Homma
  * Require for jQuery v1.7 or above
@@ -144,7 +144,7 @@
             option_len;
 
         if(typeof events[name]['trigger'] === 'string') {
-          events[name]['trigger'] += '.mRender';
+          events[name]['trigger'] += '.mRender-' + name;
 
         } else {
           trigger_len = events[name]['trigger'].length
