@@ -1,5 +1,5 @@
 /*!
- * jQuery mRender v1.0.1
+ * jQuery mRender v1.0.2
  * Copyright 2016 maam.inc
  * Contributing Author: Hiroki Homma
  * Require for jQuery v1.7 or above
@@ -20,7 +20,7 @@
     var render = function() {
       for(var name in events) {
         if(event_flags[name]) {
-          events[name]['func']();
+          events[name]['func'](params);
         }
 
         event_flags[name] = false;
