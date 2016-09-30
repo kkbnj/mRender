@@ -9,6 +9,7 @@
     var fps = 60,
         params = {
           scr: 0,
+          scrL: 0,
           winH: 0,
           winW: 0
         },
@@ -131,6 +132,7 @@
         trigger: 'scroll',
         func: function() {
           params.scr = $(window).scrollTop();
+          params.scrL = $(window).scrollLeft();
 
           afterScrollFunc(params);
         }
@@ -202,6 +204,7 @@
       fps = 60;
       params = {
         scr: 0,
+        scrL: 0,
         winH: 0,
         winW: 0
       };
