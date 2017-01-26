@@ -5,7 +5,7 @@
  * Require for jQuery v1.7 or above
  */
 (function($) {
-  mRender = (function() {
+  $.mRender = (function() {
     var fps = 60,
         params = {
           scr: 0,
